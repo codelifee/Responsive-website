@@ -8,7 +8,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 9vh;
+  min-height: 10vh;
   font-family: 'Poppins', sans-serif;
   background-color: #5d4954;
 }
@@ -24,7 +24,6 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 40%;
-  /* background-color: red; */
 }
 
 .nav-links li {
@@ -44,6 +43,7 @@ nav {
   height: 3px;
   background-color: rgb(233, 221, 221);
   margin: 5px;
+  transition: all 0.3s ease;
 }
 
 .burger {
@@ -65,8 +65,8 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 91vh;
-    top: 9vh;
+    height: 90vh;
+    top: 10vh;
     background-color: #5d4954;
     width: 30%;
     display: flex;
@@ -74,7 +74,7 @@ nav {
     align-items: center;
     /* transform: translateX(100%); */
     transform: translateX(100%);
-    transition: transform 0.5s ease-in;
+    /* transition: transform 0.5s ease-in; */
   }
 
   .nav-links li {
@@ -100,4 +100,23 @@ nav {
     opacity: 1;
     transform: translateX(0px);
   }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
