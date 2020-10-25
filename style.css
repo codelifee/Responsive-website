@@ -91,7 +91,7 @@ nav {
   transform: translateX(0%);
 }
 
-@keyframes navLinkFade {
+@keyframes navFade {
   from {
     opacity: 0;
     transform: translateX(50px);
